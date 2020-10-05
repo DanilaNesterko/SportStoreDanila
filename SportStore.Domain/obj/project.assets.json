@@ -9,11 +9,11 @@
           "buildTransitive/EntityFramework.targets": {}
         }
       },
-      "Microsoft.AspNet.Mvc/5.0.0": {
+      "Microsoft.AspNet.Mvc/5.2.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Razor": "3.0.0",
-          "Microsoft.AspNet.WebPages": "3.0.0"
+          "Microsoft.AspNet.Razor": "[3.2.7, 3.3.0)",
+          "Microsoft.AspNet.WebPages": "[3.2.7, 3.3.0)"
         },
         "compile": {
           "lib/net45/System.Web.Mvc.dll": {}
@@ -22,7 +22,7 @@
           "lib/net45/System.Web.Mvc.dll": {}
         }
       },
-      "Microsoft.AspNet.Razor/3.0.0": {
+      "Microsoft.AspNet.Razor/3.2.7": {
         "type": "package",
         "compile": {
           "lib/net45/System.Web.Razor.dll": {}
@@ -31,10 +31,10 @@
           "lib/net45/System.Web.Razor.dll": {}
         }
       },
-      "Microsoft.AspNet.WebPages/3.0.0": {
+      "Microsoft.AspNet.WebPages/3.2.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNet.Razor": "3.0.0",
+          "Microsoft.AspNet.Razor": "[3.2.7, 3.3.0)",
           "Microsoft.Web.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -1212,39 +1212,43 @@
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
       ]
     },
-    "Microsoft.AspNet.Mvc/5.0.0": {
-      "sha512": "Dj4C1Nwa1PyxhGtjQx9p6WNTBdvN46gJZMcjQAjxB+2Lmcr+ixior9FGHf9PjH6UUxR9vCZVz16zMlofFdwbPQ==",
+    "Microsoft.AspNet.Mvc/5.2.7": {
+      "sha512": "m3hUsn48k6Qb5El9A8naTwGTLCdSQKGSpGweqIfiVKltGJzAJJxuXvhhaQQtLCGg3i5V88iGjz0JG72/tlFKlg==",
       "type": "package",
-      "path": "microsoft.aspnet.mvc/5.0.0",
+      "path": "microsoft.aspnet.mvc/5.2.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
         "lib/net45/System.Web.Mvc.dll",
         "lib/net45/System.Web.Mvc.xml",
-        "microsoft.aspnet.mvc.5.0.0.nupkg.sha512",
+        "microsoft.aspnet.mvc.5.2.7.nupkg.sha512",
         "microsoft.aspnet.mvc.nuspec"
       ]
     },
-    "Microsoft.AspNet.Razor/3.0.0": {
-      "sha512": "mU1W0PRd1uQAb+triRGp51YYkw26RQ9q1tWPX57eHqxDqjx1smRHhejQhhnoAGr3bZDkl8AoUxegGR3tNM+YKA==",
+    "Microsoft.AspNet.Razor/3.2.7": {
+      "sha512": "BpWEZ+Ys7g9VAkbAfpG5jr5A1fKcmadCCXv3fYfps5YfTVABJIGV4uc9yvmXKxsNsjL+BzDld2gs+xtgT2gg1g==",
       "type": "package",
-      "path": "microsoft.aspnet.razor/3.0.0",
+      "path": "microsoft.aspnet.razor/3.2.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/System.Web.Razor.dll",
         "lib/net45/System.Web.Razor.xml",
-        "microsoft.aspnet.razor.3.0.0.nupkg.sha512",
+        "microsoft.aspnet.razor.3.2.7.nupkg.sha512",
         "microsoft.aspnet.razor.nuspec"
       ]
     },
-    "Microsoft.AspNet.WebPages/3.0.0": {
-      "sha512": "wkz/rBJlALE/tVfhVFpadcaBK0oLGOb8AbuyWQ5qr84JPHtqWjsJUe3Lfyzu2ZixdYrQ9NuKMNlKIshaJUsCFA==",
+    "Microsoft.AspNet.WebPages/3.2.7": {
+      "sha512": "2jwZFB7PvY+tbdz0ZP4iEo7gMrJxkCQUzoGLh6swUc6ZXl6DoKyDslmGcC/j9PFmJXCRMVIqtRorlPSMU2DuRA==",
       "type": "package",
-      "path": "microsoft.aspnet.webpages/3.0.0",
+      "path": "microsoft.aspnet.webpages/3.2.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Content/Web.config.install.xdt",
+        "Content/Web.config.uninstall.xdt",
         "lib/net45/System.Web.Helpers.dll",
         "lib/net45/System.Web.Helpers.xml",
         "lib/net45/System.Web.WebPages.Deployment.dll",
@@ -1253,7 +1257,7 @@
         "lib/net45/System.Web.WebPages.Razor.xml",
         "lib/net45/System.Web.WebPages.dll",
         "lib/net45/System.Web.WebPages.xml",
-        "microsoft.aspnet.webpages.3.0.0.nupkg.sha512",
+        "microsoft.aspnet.webpages.3.2.7.nupkg.sha512",
         "microsoft.aspnet.webpages.nuspec"
       ]
     },
@@ -4285,7 +4289,7 @@
     ".NETStandard,Version=v2.0": [
       "EntityFramework >= 6.4.4",
       "Microsoft.AspNetCore.Mvc.DataAnnotations >= 2.2.0",
-      "Microsoft.Aspnet.Mvc >= 5.0.0",
+      "Microsoft.Aspnet.Mvc >= 5.2.7",
       "NETStandard.Library >= 2.0.3",
       "System.ComponentModel.Annotations >= 5.0.0-rc.1.20451.14"
     ]
@@ -4344,7 +4348,7 @@
           },
           "Microsoft.Aspnet.Mvc": {
             "target": "Package",
-            "version": "[5.0.0, )"
+            "version": "[5.2.7, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
@@ -4376,7 +4380,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Mvc 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.Mvc 5.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Mvc",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
@@ -4386,7 +4390,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Razor 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.Razor 3.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Razor",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"
@@ -4396,7 +4400,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebPages 3.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.WebPages 3.2.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.WebPages",
       "targetGraphs": [
         ".NETStandard,Version=v2.0"

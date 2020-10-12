@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\opilane\\source\\repos\\SportStoreRudnev\\SportStore.Domain\\SportStore.Domain.csproj": {}
+    "C:\\Users\\opilane\\Source\\Repos\\SportStore\\SportStore.Domain\\SportStore.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\opilane\\source\\repos\\SportStoreRudnev\\SportStore.Domain\\SportStore.Domain.csproj": {
+    "C:\\Users\\opilane\\Source\\Repos\\SportStore\\SportStore.Domain\\SportStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\SportStoreRudnev\\SportStore.Domain\\SportStore.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\opilane\\Source\\Repos\\SportStore\\SportStore.Domain\\SportStore.Domain.csproj",
         "projectName": "SportStore.Domain",
-        "projectPath": "C:\\Users\\opilane\\source\\repos\\SportStoreRudnev\\SportStore.Domain\\SportStore.Domain.csproj",
+        "projectPath": "C:\\Users\\opilane\\Source\\Repos\\SportStore\\SportStore.Domain\\SportStore.Domain.csproj",
         "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\opilane\\source\\repos\\SportStoreRudnev\\SportStore.Domain\\obj\\",
+        "outputPath": "C:\\Users\\opilane\\Source\\Repos\\SportStore\\SportStore.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

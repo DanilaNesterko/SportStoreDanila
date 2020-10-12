@@ -1,12 +1,3 @@
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.deps.json
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.dll
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.pdb
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.csprojAssemblyReference.cache
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.AssemblyInfoInputs.cache
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.AssemblyInfo.cs
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.csproj.CoreCompileInputs.cache
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.dll
-C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.pdb
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.deps.json
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.dll
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.pdb
@@ -16,3 +7,12 @@ C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.Domain\obj\Debug\netst
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.dll
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.pdb
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.csprojAssemblyReference.cache
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.deps.json
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.dll
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\bin\Debug\netstandard2.0\SportStore.Domain.pdb
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.csprojAssemblyReference.cache
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.AssemblyInfoInputs.cache
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.AssemblyInfo.cs
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.dll
+C:\Users\opilane\Source\Repos\SportStore\SportStore.Domain\obj\Debug\netstandard2.0\SportStore.Domain.pdb

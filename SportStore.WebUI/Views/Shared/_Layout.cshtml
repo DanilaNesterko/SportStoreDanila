@@ -23,6 +23,11 @@
             <div class="visible-xs">STORE</div>
         </a>
         @Html.Action("Summary", "Cart")
+        <div class="navbar-right hidden-xs">
+            @Html.ActionLink("Login", "Index", "Admin",
+            new { returnUrl = Request.Url.PathAndQuery },
+            new { @class = "btn btn-default navbar-btn" })
+        </div>
     </div>
     <div class="visible-xs">
         @Html.Action("Menu", "Nav", new { horizontalLayout = true })

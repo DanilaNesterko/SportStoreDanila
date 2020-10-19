@@ -1,8 +1,13 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SportsStore.WebUI.Infrastructure.Concrete;
 using SportStore.Domain.Abstract;
 using SportStore.Domain.Entities;
+using SportStore.WebUI.Controllers;
+using SportStore.WebUI.Infrastructure.Abstract;
+
 namespace SportsStore.WebUI.Controllers
 {
     [Authorize]
@@ -59,6 +64,21 @@ namespace SportsStore.WebUI.Controllers
                 deletedProduct.Name);
             }
             return RedirectToAction("Index");
+        }
+        [Obsolete]
+        public ActionResult Logout()
+        {
+            FormsAuthProvider provider = new FormsAuthProvider();
+            if (ModelState.IsValid)
+            {
+                provider.Authenticate("slave", "slave123");
+                return RedirectToAction(new AccountController().Login());
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
+
         }
     }
 }

@@ -244,3 +244,9 @@ C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\System.Memor
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\System.Numerics.Vectors.xml
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\CredentialManagement.dll
+C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\Thinktecture.IdentityModel.dll
+C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\Thinktecture.IdentityModel.pdb
+C:\Users\opilane\source\repos\SportStoreRudnev\SportStore.WebUI\bin\Thinktecture.IdentityModel.xml

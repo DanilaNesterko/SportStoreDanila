@@ -23,11 +23,28 @@
             <div class="visible-xs">STORE</div>
         </a>
         @Html.Action("Summary", "Cart")
-        <div class="navbar-right hidden-xs">
-            @Html.ActionLink("Login", "Index", "Admin",
-            new { returnUrl = Request.Url.PathAndQuery },
-            new { @class = "btn btn-default navbar-btn" })
-        </div>
+        @{
+            if (Request.Cookies[FormsAuthentication.FormsCookieName]?.Value == null)
+            {
+                <div class="navbar-right hidden-xs">
+                    @Html.ActionLink("Register", "Register", "Account",
+                new { returnUrl = Request.Url.PathAndQuery },
+                new { @class = "btn btn-default navbar-btn" })
+                    <div class="navbar-right hidden-xs">
+                        @Html.ActionLink("Login", "Index", "Admin",
+                        new { returnUrl = Request.Url.PathAndQuery },
+                        new { @class = "btn btn-default navbar-btn" })
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="navbar-right hidden-xs">
+                    @Html.ActionLink("Logout", "Logout", "Admin", null,
+                    new { @class = "btn btn-default" })
+                </div>
+            }
+        }
     </div>
     <div class="visible-xs">
         @Html.Action("Menu", "Nav", new { horizontalLayout = true })

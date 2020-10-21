@@ -2,6 +2,8 @@
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
+using CredentialManagement;
 using SportsStore.WebUI.Infrastructure.Concrete;
 using SportStore.Domain.Abstract;
 using SportStore.Domain.Entities;
@@ -20,6 +22,22 @@ namespace SportsStore.WebUI.Controllers
         }
         public ViewResult Index()
         {
+            /*PasswordRepository passwordRepository = new PasswordRepository();
+            passwordRepository.SavePassword("test", "test123");*/
+
+         /*   HttpCookie authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+            FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(authCookie.Value);
+
+            string cookiePath = ticket.CookiePath;
+            DateTime expiration = ticket.Expiration;
+            bool expired = ticket.Expired;
+            bool isPersistent = ticket.IsPersistent;
+            DateTime issueDate = ticket.IssueDate;
+            string name = ticket.Name;
+            string userData = ticket.UserData;
+            int version = ticket.Version;
+            FormsAuthentication.GetAuthCookie("admin", isPersistent).Value.ToString();*/
+
             return View(repository.Products);
         }
         public ViewResult Edit(int productId)
@@ -65,20 +83,61 @@ namespace SportsStore.WebUI.Controllers
             }
             return RedirectToAction("Index");
         }
-        [Obsolete]
         public ActionResult Logout()
         {
-            FormsAuthProvider provider = new FormsAuthProvider();
+             HttpCookie authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+             FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(authCookie.Value);
+
+             string cookiePath = ticket.CookiePath;
+             DateTime expiration = ticket.Expiration;
+             bool expired = ticket.Expired;
+             bool isPersistent = ticket.IsPersistent;
+             DateTime issueDate = ticket.IssueDate;
+             string name = ticket.Name;
+             string userData = ticket.UserData;
+             int version = ticket.Version;
             if (ModelState.IsValid)
             {
-                provider.Authenticate("slave", "slave123");
-                return RedirectToAction(new AccountController().Login());
+                FormsAuthentication.SignOut();
             }
-            else
-            {
-                return RedirectToAction("Index");
-            }
+            return RedirectToAction("Index");
+        }
+    }
+    public class PasswordRepository
+    {
+        private const string PasswordName = "ServerPassword";
+        private const string userName = "usser";
 
+        public void SavePassword(string password, string username)
+        {
+            using (var cred = new Credential())
+            {
+                cred.Username = username;
+                cred.Password = password;
+                cred.Target = PasswordName;
+                cred.Type = CredentialType.Generic;
+                cred.PersistanceType = PersistanceType.Session;
+                cred.Save();
+            }
+        }
+
+        public string GetPassword()
+        {
+            using (var cred = new Credential())
+            {
+                cred.Target = PasswordName;
+                cred.Load();
+                return cred.Password;
+            }
+        }
+        public string GetUser()
+        {
+            using (var cred = new Credential())
+            {
+                cred.Target = userName;
+                cred.Load();
+                return cred.Username;
+            }
         }
     }
 }

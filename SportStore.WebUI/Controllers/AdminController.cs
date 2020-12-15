@@ -85,7 +85,7 @@ namespace SportsStore.WebUI.Controllers
         }
         public ActionResult Logout()
         {
-             HttpCookie authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
+             /*HttpCookie authCookie = Request.Cookies[FormsAuthentication.FormsCookieName];
              FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(authCookie.Value);
 
              string cookiePath = ticket.CookiePath;
@@ -95,12 +95,20 @@ namespace SportsStore.WebUI.Controllers
              DateTime issueDate = ticket.IssueDate;
              string name = ticket.Name;
              string userData = ticket.UserData;
-             int version = ticket.Version;
+             int version = ticket.Version;*/
             if (ModelState.IsValid)
             {
                 FormsAuthentication.SignOut();
             }
             return RedirectToAction("Index");
+        }
+        public ActionResult LogoutMain()
+        {
+            if (ModelState.IsValid)
+            {
+                FormsAuthentication.SignOut();
+            }
+            return Redirect(Request.UrlReferrer.ToString());
         }
     }
     public class PasswordRepository
